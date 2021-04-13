@@ -1,0 +1,281 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+.BButton_btn_close_open{
+	display: block;
+	padding: 10px;
+	-webkit-border-radius: 100%;
+			border-radius: 100%;
+	width: 64px;
+	height: 64px;
+	background: #fff;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 1px;
+			box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 1px;
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	z-index: 64000;
+}
+.BButton_btn_close_open.close {
+  background: #ff7514;
+}
+/*изменения*/
+.BButton_btn_close_open .open_icon_1,
+.BButton_btn_close_open .open_icon_2,
+.BButton_btn_close_open .open_icon_3,
+.BButton_btn_close_open .close_icon{
+	display: none;
+}
+.BButton_btn_close_open.close .open_icon_1,
+.BButton_btn_close_open.close .open_icon_2,
+.BButton_btn_close_open.close .open_icon_3,
+.BButton_btn_close_open.open .close_icon{
+	display: block;
+}
+.BButton_btn_close_open.close .open_icon_1,
+.BButton_btn_close_open.close .open_icon_2,
+.BButton_btn_close_open.close .open_icon_3 {
+  position: absolute;
+  opacity: 0;
+  z-index: -3;
+  visibility: hidden;
+}
+.BButton_btn_close_open.close .open_icon_1,
+.BButton_btn_close_open .open_icon_2,
+.BButton_btn_close_open .open_icon_3 {
+	width: 34px;
+	height: 34px;
+	-webkit-animation: icon-anim 6s ease-out infinite forwards;
+	animation: icon-anim 6s ease-out infinite forwards;
+}
+.BButton_btn_close_open.close .open_icon_1 {
+  left: 15px;
+  top: 15px;
+}
+.BButton_btn_close_open .open_icon_2 {
+  left: 15px;
+  top: 16px;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+.BButton_btn_close_open .open_icon_3 {
+  left: 12px;
+  top: 17px;
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+/*изменения закончены*/
+.BButton_btn_close_open .close_icon{
+	padding: 5px;
+}
+.BButton_btn_close_open.open ~ .BButton_btn{
+	-webkit-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		 -o-transform: translateX(0%);
+			transform: translateX(0%);
+}
+.BButton_btn{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	background: white;
+	position: fixed;
+	left: 20px;
+	-webkit-border-radius: 100px;
+			border-radius: 100px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 1px;
+			box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 1px;
+	z-index: 64000;
+	text-decoration: none !important;
+	-webkit-transform: translateX(-150%);
+		-ms-transform: translateX(-150%);
+		 -o-transform: translateX(-150%);
+			transform: translateX(-150%);
+	height: 50px;
+	padding: 0px 20px 0px 10px;
+	-webkit-background-size: 28px 28px;
+			background-size: 28px;
+	background-position: 20px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	color: inherit
+}
+.BButton_btn img{
+	width: 50px;
+	padding: 10px;
+}
+.BButton_btn span{
+	font-size: 13px;
+	font-weight: bold;
+}
+.BButton_btn.call{
+	bottom: 104px;
+	-webkit-transition: margin-left .2s 0s, -webkit-transform .33s .1s;
+	transition: margin-left .2s 0s, -webkit-transform .33s .1s;
+	-o-transition: margin-left .2s 0s, -o-transform .33s .1s;
+	transition: transform .33s .1s, margin-left .2s 0s;
+	transition: transform .33s .1s, margin-left .2s 0s, -webkit-transform .33s .1s, -o-transform .33s .1s;
+}
+.BButton_btn.appointment{
+	bottom: 174px;
+	-webkit-transition: margin-left .2s 0s, -webkit-transform .33s .2s;
+	transition: margin-left .2s 0s, -webkit-transform .33s .2s;
+	-o-transition: margin-left .2s 0s, -o-transform .33s .2s;
+	transition: transform .33s .2s, margin-left .2s 0s;
+	transition: transform .33s .2s, margin-left .2s 0s, -webkit-transform .33s .2s, -o-transform .33s .2s;
+}
+.BButton_btn.navigator{
+	bottom: 244px;
+	-webkit-transition: margin-left .2s 0s, -webkit-transform .33s .3s;
+	transition: margin-left .2s 0s, -webkit-transform .33s .3s;
+	-o-transition: margin-left .2s 0s, -o-transform .33s .3s;
+	transition: transform .33s .3s, margin-left .2s 0s;
+	transition: transform .33s .3s, margin-left .2s 0s, -webkit-transform .33s .3s, -o-transform .33s .3s;
+}
+.BButton_btn:hover{
+	margin-left: 10px;
+}
+
+
+
+.BButton_appointment_form{
+	display: block;
+	position: fixed;
+	top: 0;
+	background: rgba(7, 7, 7, 0.7);
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	overflow-y: scroll;
+	z-index: 64001;
+	
+	opacity: 0;
+	right: 100%;
+
+	-webkit-transition: opacity .2s .33s, right 0s .45s;
+
+	-o-transition: opacity .2s .33s, right 0s .45s;
+
+	transition: opacity .2s .33s, right 0s .45s;
+}
+.BButton_appointment_form.show{
+	right: 0%;
+	opacity: 1;
+	-webkit-transition: opacity .2s 0s, right 0s;
+	-o-transition: opacity .2s 0s, right 0s;
+	transition: opacity .2s 0s, right 0s;
+}
+
+.BButton_appointment_form > *{
+	opacity: 0;
+	-webkit-transition: opacity .33s .0s;
+	-o-transition: opacity .33s .0s;
+	transition: opacity .33s .0s;
+
+	background: #fff;
+	padding: 20px;
+	-webkit-border-radius: 10px;
+			border-radius: 10px;
+	
+	max-width: 769px;
+	margin: 0 auto;
+}
+.BButton_appointment_form.show > *{
+	opacity: 1;
+	-webkit-transition: opacity .33s .2s;
+	-o-transition: opacity .33s .2s;
+	transition: opacity .33s .2s;
+}
+.BButton_appointment_form_closelink{
+	width: 100%;
+	display: block;
+	text-align: center;
+	background: transparent;
+	font-weight: bold;
+	color: rgb(169, 169, 169);
+}
+/*изменения*/
+@-webkit-keyframes icon-anim {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: rotate(-180deg);
+			  transform: rotate(-180deg);
+	  z-index: -3;
+	  visibility: hidden;
+	}
+	3% {
+	  opacity: 1;
+	  -webkit-transform: rotate(0deg);
+			  transform: rotate(0deg);
+	  z-index: 3;
+	  visibility: visible;
+	}
+	25% {
+	  opacity: 1;
+	  -webkit-transform: rotate(0deg);
+			  transform: rotate(0deg);
+	  z-index: 3;
+	  visibility: visible;
+	}
+	33% {
+	  opacity: 0;
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	  z-index: -3;
+	  visibility: hidden;
+	}
+	100% {
+	  opacity: 0;
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	  z-index: -3;
+	  visibility: hidden;
+	}
+  }
+@keyframes icon-anim {
+0% {
+	opacity: 0;
+	-webkit-transform: rotate(-180deg);
+			transform: rotate(-180deg);
+	z-index: -3;
+	visibility: hidden;
+}
+3% {
+	opacity: 1;
+	-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+	z-index: 3;
+	visibility: visible;
+}
+25% {
+	opacity: 1;
+	-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+	z-index: 3;
+	visibility: visible;
+}
+33% {
+	opacity: 0;
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+	z-index: -3;
+	visibility: hidden;
+}
+100% {
+	opacity: 0;
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+	z-index: -3;
+	visibility: hidden;
+}
+}
+/*изменения закончены*/
